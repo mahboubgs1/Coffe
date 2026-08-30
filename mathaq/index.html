@@ -47,6 +47,8 @@ body{
     line-height:1.5; -webkit-font-smoothing:antialiased;
 }
 .num{font-family:var(--mono); font-variant-numeric:tabular-nums; direction:ltr; unicode-bidi:embed; display:inline-block;}
+/* خلايا الجداول يجب أن تبقى table-cell وإلا خرجت من تخطيط الأعمدة */
+td.num, th.num{display:table-cell; text-align:right;}
 button{font-family:inherit; cursor:pointer; border:none; background:none; color:inherit;}
 :focus-visible{outline:2px solid var(--ok); outline-offset:2px; border-radius:4px;}
 @media (prefers-reduced-motion: reduce){*{animation:none !important; transition:none !important;}}
