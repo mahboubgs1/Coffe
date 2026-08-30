@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ════════════════════════════════════════════════════════════════════
+     ⚙️ عدّل هذه الأسطر الأربعة فقط قبل مشاركة الرابط — ولا شيء غيرها
+     ════════════════════════════════════════════════════════════════════ -->
+<title>نماذج لوحات تنفيذية</title>
+<meta name="description" content="نماذج تفاعلية للوحات الأداء التنفيذية — بيانات توضيحية">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+:root{
+    direction:rtl;
+    --ground:#F7F4F0; --surface:#FFFFFF; --surface-2:#F1ECE6; --surface-3:#EAE3DA;
+    --ink:#221A15; --ink-2:#6A5D53; --ink-3:#948578; --line:#E3DAD0; --line-2:#D4C8BB;
+    --ok:#2E6F6A; --watch:#C8960C;
+    --shadow:0 1px 2px rgba(34,26,21,.05), 0 10px 30px rgba(34,26,21,.07);
+    --display:'Readex Pro','IBM Plex Sans Arabic',system-ui,sans-serif;
+    --body:'IBM Plex Sans Arabic','Readex Pro',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+    --ground:#15100D; --surface:#1E1815; --surface-2:#26201B; --surface-3:#31281F;
+    --ink:#F2EBE4; --ink-2:#A99A8D; --ink-3:#7D6F63; --line:#332A23; --line-2:#42362C;
+    --ok:#57A79F; --watch:#DDA92A;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.3);
+}}
+:root[data-theme="dark"]{
+    --ground:#15100D; --surface:#1E1815; --surface-2:#26201B; --surface-3:#31281F;
+    --ink:#F2EBE4; --ink-2:#A99A8D; --ink-3:#7D6F63; --line:#332A23; --line-2:#42362C;
+    --ok:#57A79F; --watch:#DDA92A;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.3);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:var(--body); background:var(--ground); color:var(--ink); line-height:1.6;
+     min-height:100vh; display:flex; flex-direction:column; -webkit-font-smoothing:antialiased;}
+:focus-visible{outline:2px solid var(--ok); outline-offset:3px; border-radius:6px;}
+.wrap{max-width:860px; margin:0 auto; padding:56px 24px; width:100%; flex:1;}
+
+.mast{margin-bottom:40px;}
+.eyebrow{display:inline-block; font-size:11.5px; font-weight:600; letter-spacing:.08em;
+    color:var(--ok); background:var(--surface-2); border:1px solid var(--line);
+    padding:5px 13px; border-radius:20px; margin-bottom:18px;}
+h1{font-family:var(--display); font-size:clamp(27px,4.2vw,40px); font-weight:600;
+   letter-spacing:-.02em; line-height:1.25; text-wrap:balance;}
+.mast .who{font-size:15px; color:var(--ink-2); margin-top:12px;}
+.mast .who b{color:var(--ink); font-weight:600;}
+.mast .lede{font-size:15.5px; color:var(--ink-2); margin-top:16px; max-width:60ch;}
+
+.cards{display:grid; gap:16px; margin:36px 0;}
+.card{background:var(--surface); border:1px solid var(--line); border-radius:16px;
+      padding:24px 26px; box-shadow:var(--shadow); text-decoration:none; color:inherit;
+      display:block; transition:transform .18s ease, border-color .18s ease;}
+.card:hover{transform:translateY(-2px); border-color:var(--line-2);}
+.card .top{display:flex; justify-content:space-between; align-items:flex-start; gap:16px; flex-wrap:wrap;}
+.card h2{font-family:var(--display); font-size:19px; font-weight:600;}
+.card .kind{font-size:11px; font-weight:600; color:var(--ok); background:var(--surface-2);
+     border:1px solid var(--line); padding:3px 11px; border-radius:20px; white-space:nowrap;}
+.card p{font-size:13.5px; color:var(--ink-2); margin-top:9px; max-width:56ch;}
+.card ul{list-style:none; display:flex; gap:8px; flex-wrap:wrap; margin-top:14px;}
+.card li{font-size:11.5px; color:var(--ink-2); background:var(--surface-2);
+     border:1px solid var(--line); border-radius:7px; padding:4px 10px;}
+.card .go{display:inline-flex; align-items:center; gap:6px; margin-top:16px;
+     font-size:13.5px; font-weight:600; color:var(--ok);}
+
+.soon{opacity:.62; cursor:default;}
+.soon:hover{transform:none; border-color:var(--line);}
+.soon .kind{color:var(--watch);}
+
+.note{background:var(--surface-2); border:1px solid var(--line); border-inline-start:3px solid var(--watch);
+      border-radius:11px; padding:15px 18px; font-size:13px; color:var(--ink-2);}
+.note b{color:var(--ink);}
+
+footer{border-top:1px solid var(--line); padding:22px 24px; text-align:center;
+       font-size:12px; color:var(--ink-3); line-height:1.9;}
+footer a{color:var(--ink-2);}
+@media (max-width:600px){ .wrap{padding:38px 18px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <span class="eyebrow">نماذج تفاعلية</span>
+    <h1>لوحات أداء تنفيذية تكشف ما تخفيه التقارير</h1>
+    <!-- ⚙️ ضع اسمك ومسمّاك هنا -->
+    <p class="who"><b>[CONSULTANT_NAME]</b> · استشارات ذكاء الأعمال والتحول الرقمي</p>
+    <p class="lede">
+      هذه نماذج حيّة — لا صور. افتحها وتنقّل فيها بنفسك. كل لوحة مبنية على معمارية
+      ثلاث طبقات: نظرة تنفيذية في شاشة واحدة، ثم تعمّق بنقرة إلى الفرع، ثم إلى الصنف.
+    </p>
+  </header>
+
+  <div class="cards">
+
+    <a class="card" href="mathaq/">
+      <div class="top">
+        <h2>سلسلة مقاهي — لوحة الأداء التنفيذية</h2>
+        <span class="kind">جاهز للتصفّح</span>
+      </div>
+      <p>
+        ١٢ فرعاً بثلاث صيغ تشغيلية. اللوحة تكتشف تلقائياً: فرعاً يتسرّب هامشه عبر الهدر،
+        وآخر يعتمد على تطبيقات التوصيل حتى تآكل ربحه، وصنفاً يُباع بخسارة بعد العمولة،
+        وفرعاً توظيفه أعلى من حجم مبيعاته.
+      </p>
+      <ul>
+        <li>٦ مؤشرات تنفيذية</li><li>تعمّق بنقرة</li>
+        <li>شلال الربحية</li><li>خريطة ساعات</li><li>ربحية الأصناف</li>
+      </ul>
+      <span class="go">افتح اللوحة ←</span>
+    </a>
+
+    <div class="card soon">
+      <div class="top">
+        <h2>وكالة سيارات — البيع وما بعد البيع</h2>
+        <span class="kind">قريباً</span>
+      </div>
+      <p>
+        معارض ومراكز صيانة في لوحة واحدة: عمر المخزون ورأس المال المجمّد، ربحية كل موديل
+        بعد الحوافز، استغلال الفنيين، ونسبة إرفاق التمويل.
+      </p>
+      <ul><li>عمر المخزون</li><li>ربحية الموديلات</li><li>استغلال الفنيين</li><li>تمويل وتأمين</li></ul>
+    </div>
+
+  </div>
+
+  <p class="note">
+    <b>ملاحظة:</b> جميع البيانات والأسماء في هذه النماذج <b>افتراضية بالكامل</b> وأُنشئت لغرض العرض
+    التوضيحي فقط. لا تمثّل أي جهة حقيقية، ولا تحتوي أي معلومة تخص عميلاً.
+    اللوحة الفعلية تُبنى على بياناتكم بعد جلسة مراجعة لنظامكم الحالي.
+  </p>
+
+</div>
+
+<footer>
+  <!-- ⚙️ ضع بيانات تواصلك هنا -->
+  [CONSULTANT_NAME] · <span dir="ltr">05XXXXXXXX</span> · <span dir="ltr">name@example.com</span><br>
+  نماذج توضيحية ببيانات افتراضية · 2026
+</footer>
+</body>
+</html>
