@@ -32,7 +32,7 @@
 
 من المتصفح: <https://github.com/new>
 
-- **الاسم:** `demos` (أو أي اسم تفضّله)
+- **الاسم:** `Coffe`
 - **الرؤية:** **Public** — إلزامي لتفعيل GitHub Pages مجاناً
 - **لا تُضِف** README ولا .gitignore (موجودان محلياً)
 
@@ -43,7 +43,7 @@
 نفّذ من داخل مجلد `demo-site`:
 
 ```bash
-git remote add origin https://github.com/mahboubgs1/demos.git
+git remote add origin https://github.com/mahboubgs1/Coffe.git
 git branch -M main
 git push -u origin main
 ```
@@ -63,8 +63,8 @@ git push -u origin main
 بعد ١–٢ دقيقة يصير الرابط جاهزاً:
 
 ```
-https://mahboubgs1.github.io/demos/
-https://mahboubgs1.github.io/demos/mathaq/     ← اللوحة مباشرة
+https://mahboubgs1.github.io/Coffe/
+https://mahboubgs1.github.io/Coffe/mathaq/     ← اللوحة مباشرة
 ```
 
 ---
